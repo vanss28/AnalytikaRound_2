@@ -31,6 +31,20 @@ const userSchema = new schema({
         type: String,
         required:true,
     },
+    age: { 
+        type: Number,
+        required: true,
+        validate(value) {
+            if (value < 18) {
+                throw new Error("Must be at least 18 years old");
+            }
+        }
+    },
+    gender: { // Added 'gender' field
+        type: String,
+        required: true,
+        enum: ['male', 'female', 'other']
+    },
    
 });
 

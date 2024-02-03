@@ -13,7 +13,7 @@ const sendLogin = async (req,res) => {
         })
         let info = await transporter.sendMail({
             from: 'Welcome to Quora <breanne0@ethereal.email>' ,
-            to : "parikhveer71@gmail.com",
+            to : "vanss2808@gmail.com",
             subject : "Login",
             text : "Successfully Logged in"
         })

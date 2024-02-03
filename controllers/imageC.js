@@ -9,6 +9,7 @@ const uploadImage = async (req,res) => {
             },
             //userid:req.user._id
         })
+        //error handling ke liye try catch block use kiya
         try {
             await newImage.save()
             res.send("image upload successful")
